@@ -70,15 +70,15 @@ $cardShowVoiceActor        = $cardShowVoiceActor        ?? true;
         <?php endif ?>
         <div class="cast-npc-actions">
             <button class="vote-btn upvote-btn upvote<?= $cardIsUpvoted ? ' clicked' : '' ?>" data-npc-id="<?= $cardNpcId ?>">
-                <span class="vote-icon">👍</span>
+                <span class="vote-icon"><img src="images/thumbs-up-svgrepo-com (1).svg" alt="Thumbs Down"> </span>
                 <span class="vote-count"><?= $cardNpc->getUpvotes() ?></span>
             </button>
             <button class="vote-btn downvote-btn downvote<?= $cardIsDownvoted ? ' clicked' : '' ?>" data-npc-id="<?= $cardNpcId ?>">
-                <span class="vote-icon">👎</span>
+                <span class="vote-icon"><img src="images/thumbs-down-svgrepo-com.svg" alt="Thumbs Up"> </span>
                 <span class="vote-count"><?= $cardNpc->getDownvotes() ?></span>
             </button>
             <button class="vote-btn comment-btn comment" data-npc-id="<?= $cardNpcId ?>">
-                <span class="vote-icon">💬</span>
+                <span class="vote-icon"><img src="images/speech-bubble-svgrepo-com.svg" alt="Speech Bubble"> </span>
                 <span class="vote-count"><?= $cardNpc->getCommentsCount() ?></span>
             </button>
             <svg class="cast-npc-chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
